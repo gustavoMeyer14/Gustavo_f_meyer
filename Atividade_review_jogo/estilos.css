@@ -70,7 +70,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #e6e6f0;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     padding: 0.4rem 0.2rem;
@@ -119,7 +119,7 @@ th, td {
 }
 th {
     background-color: #1c1c2e;
-    color: #00e5ff;
+    color: #4b75ff;
 }
 
 tbody tr:nth-child(even) {
@@ -137,14 +137,14 @@ fieldset {
 }
 
 legend {
-    color: #00e5ff;
+    color: #4b75ff;
     font-weight: 700;
     padding: 0 0.5rem;
 }
 
 label {
     font-weight: 600;
-    color: #e6e6f0;
+    color: #ffffff;
 }
 
 input[type="text"],
@@ -161,15 +161,20 @@ select {
     font-size: 1rem;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-select:focus {
-    outline: none;
-    border-color: #00e5ff;
+textarea {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 0.4rem;
+    padding: 0.6rem 0.8rem;
+    background-color: #12121e;
+    border: 1px solid #2a2a40;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
 }
 
-.btn-comprar {
-    background-color: #b026ff;
+.btn-enviar {
+    background-color: #4b75ff;
     color: #ffffff;
     border: none;
     padding: 0.8rem 1.6rem;
@@ -180,12 +185,29 @@ select:focus {
     transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-.btn-comprar:hover {
-    background-color: #00e5ff;
+.btn-limpar {
+    background-color: #4b75ff;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #00ff4c;
     color: #0d0d17;
 }
 
-.btn-comprar:active {
+.btn-limpar:hover {
+    background-color: #ff0000;
+    color: #0d0d17;
+}
+
+.btn-enviar:active {
     transform: scale(0.97);
 }
 
@@ -196,7 +218,7 @@ footer {
     margin-top: 2rem;
 }
 footer a {
-    color: #00e5ff;
+    color: #4b75ff;
     text-decoration: none;
 }
 footer a:hover {
