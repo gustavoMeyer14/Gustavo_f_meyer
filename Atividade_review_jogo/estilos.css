@@ -4,6 +4,67 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;          /* Ativa o Flexbox */
+    align-items: center;    /* Alinha verticalmente ao centro (opcional) */
+    gap: 20px;              /* Cria um espaço entre a imagem e o texto */
+}
+
+.container img {
+    width: 500px;           /* Defina o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 10px; /**cantos arrendodados */
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15); /**brilho sutil neon */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Espaço entre a logo e o menu */
+    padding: 10px 20px;
+    background-color: #110f2c;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
+}
+
+.header-conteudo {
+    display: flex;
+    flex-direction: column; /* Coloca o título em cima e o menu embaixo */
+    gap: 10px; /* Espaço entre o título e o menu */
+}
+
+.site-titulo {
+    font-size: 30px; /* Ajuste o tamanho conforme preferir */
+    margin: 0;
+    color: #ffffff;
+    text-align: left;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Garante que a imagem não distorça */
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
+}
+
+.menu {
+    display: flex;
+    gap: 50px; /* Espaço entre os links do menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu a:hover {
+    color: #00e1ff;
+}
+
 body {
     background-color: #0d0d17; /*define a cor de fundo*/
     color: #e6e6f0;
@@ -95,7 +156,7 @@ figure {
 }
 
 figure img {
-    max-width: 100%; /**imagem nunca ultrapassa o container*/
+     /**imagem nunca ultrapassa o container*/
     border-radius: 10px; /**cantos arrendodados */
     box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15); /**brilho sutil neon */
 }
@@ -128,6 +189,7 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
     background-color: #1c1c2e;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
 }
 
 fieldset {
@@ -159,6 +221,7 @@ select {
     border-radius: 6px;
     color: #e6e6f0;
     font-size: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
 }
 
 textarea {
@@ -171,6 +234,7 @@ textarea {
     border-radius: 6px;
     color: #ffffff;
     font-size: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
 }
 
 .btn-enviar {
@@ -183,6 +247,7 @@ textarea {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.15s ease;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
 }
 
 .btn-limpar {
@@ -195,16 +260,19 @@ textarea {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.15s ease;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
 }
 
 .btn-enviar:hover {
     background-color: #00ff4c;
     color: #0d0d17;
+    box-shadow: 0 8px 24px #00ff4c;
 }
 
 .btn-limpar:hover {
     background-color: #ff0000;
     color: #0d0d17;
+    box-shadow: 0 8px 24px #ff0000;
 }
 
 .btn-enviar:active {
