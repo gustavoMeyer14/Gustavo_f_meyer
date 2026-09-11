@@ -5,36 +5,36 @@
 }
 
 .container {
-    display: flex;          /* Ativa o Flexbox */
-    align-items: center;    /* Alinha verticalmente ao centro (opcional) */
-    gap: 20px;              /* Cria um espaço entre a imagem e o texto */
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .container img {
-    width: 500px;           /* Defina o tamanho da imagem conforme necessário */
+    width: 500px;
     height: auto;
-    border-radius: 10px; /**cantos arrendodados */
-    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15); /**brilho sutil neon */
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    gap: 100px; /* Espaço entre a logo e o menu */
+    gap: 100px;
     padding: 10px 20px;
     background-color: #2f2d4b;
     border-radius: 10px;
-    box-shadow: 0 8px 24px #ffff;
+    box-shadow: 0 8px 24px #5a58c4;
 }
 
 .header-conteudo {
     display: flex;
-    flex-direction: column; /* Coloca o título em cima e o menu embaixo */
-    gap: 10px; /* Espaço entre o título e o menu */
+    flex-direction: column;
+    gap: 10px;
 }
 
 .site-titulo {
-    font-size: 30px; /* Ajuste o tamanho conforme preferir */
+    font-size: 30px;
     margin: 0;
     color: #ffffff;
     text-align: left;
@@ -43,14 +43,14 @@
 .logo-container img {
     width: 100px;
     height: 100px;
-    object-fit: contain; /* Garante que a imagem não distorça */
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
 }
 
 .menu {
     display: flex;
-    gap: 50px; /* Espaço entre os links do menu */
+    gap: 50px;
 }
 
 .menu a {
@@ -66,7 +66,7 @@
 }
 
 body {
-    background-color: #100f25; /*define a cor de fundo*/
+    background-color: #020022;
     color: #e6e6f0;
     font-family: "Segoe UI", Arial, sans-serif;
     line-height: 1.6;
@@ -74,9 +74,9 @@ body {
 }
 
 hr {
-    border: none; /*remove borda*/
+    border: none;
     height: 1px;
-    background-color: #2a2a40; /*linha sutil, discreta no tema escuro*/
+    background-color: #2a2a40;
     margin: 2rem 0;
 }
 
@@ -86,7 +86,7 @@ h1, h2 {
 }
 
 h2 {
-    color: #4b75ff;; /*azul neon: identidade da marca*/
+    color: #4b75ff;
     font-size: 1.6rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #1c1c2e;
@@ -98,7 +98,7 @@ h3 {
 }
 
 strong {
-    color: #4B75FF; /*roxo neon com destaque*/
+    color: #4B75FF;
 }
 
 del {
@@ -121,7 +121,7 @@ del {
 }
 
 nav ul {
-    list-style: none; /**remove as bolinhas padrão*/
+    list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -145,7 +145,7 @@ nav ul li a:hover {
 
 section {
     max-width: 800px;
-    margin: 0 auto;  /**centraliza o bloco na pagina */
+    margin: 0 auto;
     padding: 1rem 0;
 }
 
@@ -155,9 +155,8 @@ figure {
 }
 
 figure img {
-     /**imagem nunca ultrapassa o container*/
-    border-radius: 10px; /**cantos arrendodados */
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15); /**brilho sutil neon */
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
 }
 
 figcaption {
@@ -166,37 +165,26 @@ figcaption {
     color: #9a9ab0;
 }
 
-.tabela-arredondada {
+table {
     width: 100%;
-    border-collapse: collapse; /* Essencial para o border-radius funcionar */
-    border-spacing: 0;         /* Remove espaços indesejados entre as células */
-    border: 1px solid #ccc;
-    border-radius: 15px;       /* Define o arredondamento dos cantos externos */
-    overflow: hidden;          /* Garante que o fundo do th/td não vaze nos cantos */
+    border-collapse: collapse;
+    margin-top: 1rem;
 }
 
 th, td {
-    padding: 12px 16px;
     text-align: left;
-    border-bottom: 1px solid #1c1c2e;
+    padding: 0.75rem 1rem;
+    border: 1px solid #2a2a40;
 }
 th {
     background-color: #1c1c2e;
-    color: #ffbbbb;
-    font-size: 20px;
-    background-color: #1c1c2e;
-    font-weight: bold;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #12121e;
-    border-bottom: none;
+    color: rgb(255, 192, 239);
 }
 
 tbody tr:hover {
     background-color: #1c1c2e;
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
-}
+    box-shadow: 0 8px 24px rgb(83, 59, 77);
+}   
 
 fieldset {
     border: 1px solid #2a2a40;
