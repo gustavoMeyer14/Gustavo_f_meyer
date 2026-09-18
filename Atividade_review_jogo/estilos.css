@@ -27,6 +27,11 @@
     box-shadow: 0 8px 24px #5a58c4;
 }
 
+.navbar:hover {
+    transition: 0.5s;
+    scale: 110%;
+}
+
 .header-conteudo {
     display: flex;
     flex-direction: column;
@@ -157,6 +162,12 @@ figure {
 figure img {
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+}
+
+img:hover {
+    transition: 0.5s;
+    scale: 110%;
+    box-shadow: 0 25px 24px #12121e;
 }
 
 figcaption {
